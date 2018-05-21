@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row">
+    <div id="exTab1" class="center-block" style="width:750px; padding:20px;">
+        <ul class="nav nav-tabs nav-justified">
+            <li class="active">
+                <a href="#1a" data-toggle="tab">@StringResources.Url</a>
+            </li>
+            <li>
+                <a href="#2a" data-toggle="tab">@StringResources.Text</a>
+            </li>
+        </ul>
+        <div class="tab-content clearfix">
+            <div class="tab-pane active" id="1a" style="padding:20px;">
+                @{Html.RenderPartial("UrlAnalysis", new SeoAnalyzerApp.Models.UrlAnalysisInputModel());}
+            </div>
+            <div class="tab-pane" id="2a" style="padding:20px;">
+                @{Html.RenderPartial("TextAnalysis", new SeoAnalyzerApp.Models.TextAnalysisInputModel());}
+            </div>
+        </div>
+    </div>
+</div>

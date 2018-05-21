@@ -1,0 +1,19 @@
+﻿@model SeoAnalyzerApp.Models.AnalysisResultViewModel
+
+@if (Model.Options.NumberOfWords)
+{
+    <h2>@StringResources.NumberOfWords</h2>
+    Html.RenderPartial("WordCounts", Model.NumberOfWords);
+}
+
+@if (Model.Options.NumberOfMetaKeywords)
+{
+    <h2>@StringResources.NumberOfMetaKeywords</h2>
+    Html.RenderPartial("WordCounts", Model.NumberOfMetaKeywords);
+}
+
+@if (Model.Options.ExternalLinks)
+{
+    <h2>@StringResources.ExternalLinks</h2>
+    Html.RenderPartial("Links", Model.ExternalLinks);
+}

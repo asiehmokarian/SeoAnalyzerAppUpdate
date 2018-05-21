@@ -1,0 +1,25 @@
+﻿@model HandleErrorInfo
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Error</title>
+</head>
+<body>
+    <hgroup class="list-group-item-warning">
+        @if (Model.Exception is WebException)
+        {
+            <h4>@Model.Exception.Message</h4>
+        }
+        else
+        {
+            <h4>An error occurred while processing your request.</h4>
+            @Model.Exception.Message
+        }
+    </hgroup>
+</body>
+</html>

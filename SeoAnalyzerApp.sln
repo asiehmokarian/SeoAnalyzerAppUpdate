@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeoAnalyzerApp", "SeoAnalyzerApp\SeoAnalyzerApp.csproj", "{9BE95CFA-D445-4300-AAFD-796D22F129D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeoAnalyzerApp.Tests", "SeoAnalyzerApp.Tests\SeoAnalyzerApp.Tests.csproj", "{EE2A70E6-AD69-4916-A577-BD6F1B21BF9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeoAnalyzerApp.BusinessLogic", "SeoAnalyzerApp.BusinessLogic\SeoAnalyzerApp.BusinessLogic.csproj", "{63AE0EBB-6451-4CC8-85BA-03BAE70A6BB8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{2A4203C1-FCF9-49A9-A97B-6ED542DEB603}"
+	ProjectSection(SolutionItems) = preProject
+		ReadMe.md = ReadMe.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeoAnalyzerApp.Common", "SeoAnalyzerApp.Common\SeoAnalyzerApp.Common.csproj", "{42651234-36CF-44CB-AAF0-CE32D2120AC2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9BE95CFA-D445-4300-AAFD-796D22F129D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BE95CFA-D445-4300-AAFD-796D22F129D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BE95CFA-D445-4300-AAFD-796D22F129D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BE95CFA-D445-4300-AAFD-796D22F129D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE2A70E6-AD69-4916-A577-BD6F1B21BF9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE2A70E6-AD69-4916-A577-BD6F1B21BF9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE2A70E6-AD69-4916-A577-BD6F1B21BF9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE2A70E6-AD69-4916-A577-BD6F1B21BF9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63AE0EBB-6451-4CC8-85BA-03BAE70A6BB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63AE0EBB-6451-4CC8-85BA-03BAE70A6BB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63AE0EBB-6451-4CC8-85BA-03BAE70A6BB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63AE0EBB-6451-4CC8-85BA-03BAE70A6BB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42651234-36CF-44CB-AAF0-CE32D2120AC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42651234-36CF-44CB-AAF0-CE32D2120AC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42651234-36CF-44CB-AAF0-CE32D2120AC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42651234-36CF-44CB-AAF0-CE32D2120AC2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DE38684E-D43A-4FB8-94F7-F45A01E1CB3D}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,40 @@
+﻿@model IEnumerable<SeoAnalyzerApp.Models.LinkModel>
+@{
+    var id = Guid.NewGuid().ToString().Replace("-", "_");
+}
+<dl class="dl-horizontal">
+    <dt>
+        @StringResources.NumberOfExternalLinks
+    </dt>
+
+    <dd>
+        @Model.Count()
+    </dd>
+
+</dl>
+
+<table class="datatable table table-striped table-bordered table-hover" cellspacing="0" id="@id">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Link)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Link)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<script>
+    $(document).ready(function () {
+        $('#@id').DataTable({ searching: false, bLengthChange: false });
+    });
+</script>
