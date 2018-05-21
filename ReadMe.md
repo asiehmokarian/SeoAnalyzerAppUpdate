@@ -16,6 +16,7 @@ The analysis results will be shown in sortable tables.
 ### Assumptions
 - The submitted text can be a plain text or a text that contains HTML tags.
 - Application filters out stop-words and they are configurable via `Web.config` file.
+- The pattern for detecting each word is configurable via `Web.config` file.
 - Absolute URIs are considered as external links and relative links are considered as internal links.
 
 ### Implementation
@@ -30,6 +31,6 @@ Simply open the project and press F5.
 - Text can be a plain text or and html text.
 - The URL should be a valid URL. URLs with the format of `http://example.com/...` or `https://example.com/...` are considered valid. Submitting invalid URL or unreachable URL will make error.
 - Choose analysis options, at least one option should be chosen.
-- Click analyze button to run the anlyzer.
+- Click analyze button to run the analyzer.
 - For each enabled option, the result will be shown in a sortable table.
 
